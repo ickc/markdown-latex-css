@@ -3,6 +3,8 @@ HTML Header:	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs
 	<script>hljs.initHighlightingOnLoad();</script>  
 
 This provides the use of amsthm in MultiMarkdown with the output of LaTeX and HTML via CSS. For LaTeX support, you need `mmd-load-amsthm.tex` from [ickc/peg-multimarkdown-latex-support: Default support files for generating LaTeX documents with MMD 3 through MMD 5](https://github.com/ickc/peg-multimarkdown-latex-support).
+
+It can also be used in any HTML. See reference.
   
 # Amsthm.css Usage #
 
