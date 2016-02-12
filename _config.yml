@@ -1,0 +1,12 @@
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: [html, head, body, dt, dd, p, rt, rp, optgroup, option, caption]
+  ignore:
+    envs: [development]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
