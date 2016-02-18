@@ -1,86 +1,95 @@
-.theorem,
-.lemma,
-.proposition,
-.corollary {
-    display: block;
-    margin: 12px 0;
-    font-style: italic
+/* style of "before" */
+/** before plain or definition **/
+.conjecture:before,.corollary:before,.definition:before,.example:before,.lemma:before,.postulate:before,.problem:before,.proposition:before,.theorem:before
+{
+	font-weight:700;
+	font-style:normal
 }
-.theorem:before {
-    content: "Theorem.";
-    font-weight: 700;
-    font-style: normal
+/** before remark or proof **/
+.remark:before,.note:before,.case:before,.proof:before
+{
+	font-style:italic
 }
-.lemma:before {
-    content: "Lemma.";
-    font-weight: 700;
-    font-style: normal
+/* content of "before" (everything goes here) */
+.corollary:before
+{
+	content:"Corollary."
 }
-.proposition:before {
-    content: "Proposition.";
-    font-weight: 700;
-    font-style: normal
+
+.lemma:before
+{
+	content:"Lemma."
 }
-.corollary:before {
-    content: "Corollary.";
-    font-weight: 700;
-    font-style: normal
+
+.proposition:before
+{
+	content:"Proposition."
 }
-.definition,
-.conjecture,
-.example,
-.postulate,
-.problem,
-.remark,
-.note,
-.case,
-.proof {
-    display: block;
-    margin: 12px 0;
-    font-style: normal
+
+.theorem:before
+{
+	content:"Theorem."
 }
-.definition:before {
-    content: "Definition.";
-    font-weight: 700;
-    font-style: normal
+.definition:before
+{
+	content:"Definition."
 }
-.conjecture:before {
-    content: "Conjecture.";
-    font-weight: 700;
-    font-style: normal
+
+.conjecture:before
+{
+	content:"Conjecture."
 }
-.example:before {
-    content: "Example.";
-    font-weight: 700;
-    font-style: normal
+
+.example:before
+{
+	content:"Example."
 }
-.postulate:before {
-    content: "Postulate.";
-    font-weight: 700;
-    font-style: normal
+
+.postulate:before
+{
+	content:"Postulate."
 }
-.problem:before {
-    content: "Problem.";
-    font-weight: 700;
-    font-style: normal
+
+.problem:before
+{
+	content:"Problem."
 }
-.remark:before {
-    content: "Remark.";
-    font-style: italic
+.remark:before
+{
+	content:"Remark."
 }
-.note:before {
-    content: "Note.";
-    font-style: italic
+
+.note:before
+{
+	content:"Note."
 }
-.case:before {
-    content: "Case.";
-    font-style: italic
+
+.case:before
+{
+	content:"Case."
 }
-.proof:before {
-    content: "Proof.";
-    font-style: italic
+.proof:before
+{
+	content:"Proof."
 }
-.proof:after {
-    content: "\25FB";
-    float: right
+/* main style */
+/** plain **/
+.corollary,.lemma,.proposition,.theorem
+{
+	display:block;
+	margin:12px 0;
+	font-style:italic
+}
+/** definition, remark or proof **/
+.case,.conjecture,.definition,.example,.note,.postulate,.problem,.proof,.remark
+{
+	display:block;
+	margin:12px 0;
+	font-style:normal
+}
+/* after proof */
+.proof:after
+{
+	content:"\25FB";
+	float:right
 }
