@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 
 # Nested List #
 list.css supports different styles in different levels of a nested list (up to level 6 [^ if you need more than 6 levels, probably it should be simplified. But there can always be exception.])

@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 Using CSS to make the MultiMarkdown to HTML output mimics the MultiMarkdown to LaTeX output.
 
 # CSS #
