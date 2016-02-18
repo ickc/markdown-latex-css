@@ -2,3 +2,4 @@ multimarkdown-latex.css
 _site/
 .jekyll-metadata
 .sass-cache/
+Gemfile.lock
