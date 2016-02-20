@@ -23,6 +23,7 @@ There's 2 JS setup here as well:
 	1. Cancel extension
 	2. equation numbering
 	3. a semi-finished Physics extension I wrote
+	4. siunitx
 2. [Highlight.js](highlight-setup/load-highlight-cdn.min.html)
 
 You can copy the code from there and put it in a metadata named `HTML Header` in MultiMarkdown.

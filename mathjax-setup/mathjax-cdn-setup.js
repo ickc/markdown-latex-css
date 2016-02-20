@@ -10,6 +10,6 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
 MathJax.Hub.Config({
 	TeX: {
 		equationNumbers: { autoNumber: "AMS"},
-		extensions: ["[Contrib]/physics/physics.js"]
+		extensions: ["[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"]
 	}
 });
