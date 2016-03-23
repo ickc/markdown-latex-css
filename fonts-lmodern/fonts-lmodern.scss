@@ -1,0 +1,93 @@
+---
+---
+@font-face {
+    font-family: 'lmroman';
+    src: url('lmroman10-bold-webfont.eot');
+    src: url('lmroman10-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmroman10-bold-webfont.woff') format('woff'),
+         url('lmroman10-bold-webfont.ttf') format('truetype'),
+         url('lmroman10-bold-webfont.svg#lmroman') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lmroman';
+    src: url('lmroman10-bolditalic-webfont.eot');
+    src: url('lmroman10-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmroman10-bolditalic-webfont.woff') format('woff'),
+         url('lmroman10-bolditalic-webfont.ttf') format('truetype'),
+         url('lmroman10-bolditalic-webfont.svg#lmroman') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lmroman';
+    src: url('lmroman10-italic-webfont.eot');
+    src: url('lmroman10-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmroman10-italic-webfont.woff') format('woff'),
+         url('lmroman10-italic-webfont.ttf') format('truetype'),
+         url('lmroman10-italic-webfont.svg#lmroman') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lmroman';
+    src: url('lmroman10-regular-webfont.eot');
+    src: url('lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmroman10-regular-webfont.woff') format('woff'),
+         url('lmroman10-regular-webfont.ttf') format('truetype'),
+         url('lmroman10-regular-webfont.svg#lmroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lmmono';
+    src: url('lmmono10-italic-webfont.eot');
+    src: url('lmmono10-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmmono10-italic-webfont.woff') format('woff'),
+         url('lmmono10-italic-webfont.ttf') format('truetype'),
+         url('lmmono10-italic-webfont.svg#lmmono') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'lmmono';
+    src: url('lmmono10-regular-webfont.eot');
+    src: url('lmmono10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmmono10-regular-webfont.woff') format('woff'),
+         url('lmmono10-regular-webfont.ttf') format('truetype'),
+         url('lmmono10-regular-webfont.svg#lmmono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lmmono';
+    src: url('lmmonolt10-bold-webfont.eot');
+    src: url('lmmonolt10-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmmonolt10-bold-webfont.woff') format('woff'),
+         url('lmmonolt10-bold-webfont.ttf') format('truetype'),
+         url('lmmonolt10-bold-webfont.svg#lmmono') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+html {
+	font-family: {
+		lmroman, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, STFangSong, "华文仿宋", FangSong, "仿宋", serif;
+	}
+}
+
+code{
+    font-family: {
+		lmmono, Consolas, "Liberation Mono", Menlo, Courier, "PingFang HK", "蘋方-港", "PingFang TC", "蘋方-繁", "PingFang SC", "蘋方-簡", "PingFang", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", monospace;
+	}
+}
