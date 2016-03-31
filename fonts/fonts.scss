@@ -3,7 +3,7 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'lmroman';
+    font-family: 'Latin Modern Roman';
     src: url('lmroman10-bold-webfont.eot');
     src: url('lmroman10-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('lmroman10-bold-webfont.woff') format('woff'),
@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: 'lmroman';
+    font-family: 'Latin Modern Roman';
     src: url('lmroman10-bolditalic-webfont.eot');
     src: url('lmroman10-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('lmroman10-bolditalic-webfont.woff') format('woff'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: 'lmroman';
+    font-family: 'Latin Modern Roman';
     src: url('lmroman10-italic-webfont.eot');
     src: url('lmroman10-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('lmroman10-italic-webfont.woff') format('woff'),
@@ -36,7 +36,7 @@
 }
 
 @font-face {
-    font-family: 'lmroman';
+    font-family: 'Latin Modern Roman';
     src: url('lmroman10-regular-webfont.eot');
     src: url('lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('lmroman10-regular-webfont.woff') format('woff'),
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'lmmono';
+    font-family: 'Latin Modern Mono';
     src: url('lmmono10-italic-webfont.eot');
     src: url('lmmono10-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('lmmono10-italic-webfont.woff') format('woff'),
@@ -59,7 +59,7 @@
 }
 
 @font-face {
-    font-family: 'lmmono';
+    font-family: 'Latin Modern Mono';
     src: url('lmmono10-regular-webfont.eot');
     src: url('lmmono10-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('lmmono10-regular-webfont.woff') format('woff'),
@@ -71,7 +71,7 @@
 }
 
 @font-face {
-    font-family: 'lmmono';
+    font-family: 'Latin Modern Mono';
     src: url('lmmonolt10-bold-webfont.eot');
     src: url('lmmonolt10-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('lmmonolt10-bold-webfont.woff') format('woff'),
@@ -83,9 +83,9 @@
 }
 
 html {
-	font-family: lmroman, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, STFangSong, "华文仿宋", FangSong, "仿宋", serif;
+	font-family: 'Latin Modern Roman', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, STFangSong, "华文仿宋", FangSong, "仿宋", serif;
 }
 
 code{
-    font-family: lmmono, Consolas, "Liberation Mono", Menlo, Courier, "PingFang HK", "蘋方-港", "PingFang TC", "蘋方-繁", "PingFang SC", "蘋方-簡", "PingFang", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", monospace;
+    font-family: 'Latin Modern Mono', Consolas, "Liberation Mono", Menlo, Courier, "PingFang HK", "蘋方-港", "PingFang TC", "蘋方-繁", "PingFang SC", "蘋方-簡", "PingFang", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", monospace;
 }
