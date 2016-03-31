@@ -30,7 +30,7 @@ They are not included in the combined css mentioned above, since it is huge. If 
 
 Links to Latin Modern fonts:
 
-- [LM downloads — GUST](http://www.gust.org.pl/projects/e-foundry/latin-modern/download)
+- [LM downloads --- GUST](http://www.gust.org.pl/projects/e-foundry/latin-modern/download)
 - [Latin Modern --- Font Squirrel](http://www.fontsquirrel.com/fonts/list/find_fonts?q%5Bterm%5D=latin+modern&q%5Bsearch_check%5D=Y)
 
 ## CSS From Marked 2 ##
