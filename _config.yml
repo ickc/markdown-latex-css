@@ -1,3 +1,5 @@
+exclude: [.git, .gitignore, .sass-cache, Gemfile, Gemfile.lock, index.md]
+
 sass:
   style: compressed
 
