@@ -1,5 +1,5 @@
 multimarkdown-latex.css
-fonts-lmodern.css
+fonts.css
 _site/
 .jekyll-metadata
 .sass-cache/

@@ -1,0 +1,233 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+@font-face {
+    font-family: 'EnigmaticRegular';
+    src: url('Enigma__2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EnigmaticItalic';
+    src: url('Enigma_2i-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EnigmaticBold';
+    src: url('EnigmaB_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RopaSansRegular';
+    src: url('RopaSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RopaSansItalic';
+    src: url('RopaSans-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+	font-family: 'EnigmaticRegular', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #fff;
+}
+a{
+	text-decoration: none;
+}
+.clr{
+	clear: both;
+}
+
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-moz-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-o-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-ms-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+
+html, body {
+	height:100%;
+}
+body {
+	width: 100%;
+	background-color: #247fda;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#logoicon {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  right: -100px;
+  -webkit-transform: rotate(0);
+  opacity: .5;
+}
+
+#home:target ~ #logoicon {
+	-webkit-transition: all .5s ease-out;
+	-webkit-transform: rotate(20deg) translateX(0);
+	z-index: 0;
+}
+
+#header{
+	position: fixed;
+	z-index: 2;
+	width: 165px;
+	top: 50px;
+}
+#header h1{
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	padding: 20px;
+	background: #111;
+}
+#navigation {
+	margin-top: 20px;
+	width: 165px;
+	display:block;
+	list-style:none;
+	z-index:2;
+}
+#navigation a{
+	color: #444;
+	display: block;
+	background: rgba(255,255,255,.8);
+	line-height: 50px;
+	padding: 0px 10px;
+	margin-bottom: 6px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	font-size: 14px;
+}
+#navigation a:hover {
+	background: #eee;
+}
+.content{
+	max-width: 600px;
+	left: 190px;
+	position: relative;
+	padding-top: 30px;
+	z-index: 1;
+}
+.content h2{
+	font-size: 40px;
+	padding: 35px 0px 20px 0px;
+	color: #fff;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.content p{
+	font-family: 'RopaSansRegular';
+	font-weight: normal;
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: #eee;
+	display: inline-block;
+	background: rgba(0,0,0,.75);
+	padding: 10px;
+	margin: 3px 0px;
+}
+.panel{
+	display: block;
+	z-index: 1;
+}
+
+.panel img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  border: 8px solid rgba(0,0,0,.25);
+  -webkit-box-sizing: border-box;
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,.75);
+  margin: 10px 0;
+}
+#home:target ~ #header #navigation #link-home,
+#gettingstarted:target ~ #header #navigation #link-gettingstarted,
+#updating:target ~ #header #navigation #link-updating,
+#style:target ~ #header #navigation #link-style,
+#options:target ~ #header #navigation #link-options,
+#source:target ~ #header #navigation #link-source {
+	background: #fff;
+	color: #111;
+}
+
+#home, .panel {
+	padding-bottom: 300px;
+}
+
+video {
+	display: block;
+	width: 480px;
+	margin: 0 auto;
+	clear: both;
+}

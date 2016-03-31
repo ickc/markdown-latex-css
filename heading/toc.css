@@ -1,8 +1,0 @@
-.TOC ul {
-  counter-reset: section;
-  list-style-type: none;
-}
-.TOC li::before {
-  counter-increment: section;
-  content: counters(section,".") ". ";
-}

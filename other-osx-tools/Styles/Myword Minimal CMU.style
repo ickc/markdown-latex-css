@@ -1,0 +1,115 @@
+// Myword style by David Loeffler is based on Byword.css file by Brett Terpstra for Marked.app and
+// Elegant style for MultiMarkdown Composer
+// by Fletcher T. Penney
+// CSS is from Byword App adapted from Brett Terpstra's version for his excellent Marked app.
+//    Please leave this notice in place, along with any additional credits below.
+//
+//    Byword.css theme is based on Byword.app <http://bywordapp.com>
+//    Authors: @brunodecarvalho, @jpedroso, @rcabaco
+//    Copyright 2011 Metaclassy, Lda. <http://metaclassy.com>
+//
+// Colors can be:
+//      #RGB (with or without the '#')
+//      #RRGGBB
+//      #ARGB (the A is for alpha)
+//      #AARRGGBB
+//
+// List of elements that can have formatting applied:
+//  default
+//  blockquote
+//  bold
+//  boldAndItalic
+//  codeBlock
+//  codeSpan
+//  comment
+//  heading
+//  heading1 - heading6
+//  italic
+//  link - Markdown links, e.g. [foo](bar)
+//  list
+//  math
+//  metadata
+//  table
+//  URL - the actual clickable URL (if enabled)
+{
+    autoZoomHorizontalPadding = 50; // Left and Right padding to use when Auto Zoom is on
+    backgroundColor = f2f2f2;          // Color to be used for the background
+    caretColor = 000;               // Color to be used for the cursor
+ //   focusMode = 1;                  // Should Focus Mode be turned on when this theme is enabled?
+ //   typewriterMode = 1;             // Should Typewriter Mode be turned on when this theme is enabled?
+    foregroundColor = 000;          // Color to be used for the text
+    markupForegroundColor = ccc;   // Color to be used for markup text foreground
+                                    // Can also set a background color
+// CSS is applied to the preview pane to allow you to match colors, or apply any other desired formatting
+    css = "body {background:#f2f2f2;color:#3c3c3c;font-family:Helvetica\ Neue,Helvetica; font-size:14px; line-height:170%; text-align: justify;-webkit-font-smoothing:antialiased;}a{color:#308bd8;text-decoration:none;}a:hover{text-decoration:underline;}h1,h2{line-height:1.2em;margin-top:32px;margin-bottom:12px;}h1:first-child{margin-top:0;}h3,h4,h5,h6{margin-top:12px;margin-bottom:0;}h5,h6{font-size:.9em;line-height:1em;}p{margin:0 0 24px;}#wrapper hr{width:100%;border:0;color:#eee;background-color:#ccc;height:1px;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.75);margin:3em auto;}ol{list-style:outside decimal;}ul{list-style:outside disc;}ol,ul{padding-left:0;margin-bottom:24px;}ol li{margin-left:28px;}ul li{margin-bottom:8px;margin-left:16px;}li > ol,li > ul{padding-left:12px;}dl{margin-bottom:24px;}dl dt{font-weight:700;margin-bottom:8px;}dl dd{margin-left:0;margin-bottom:12px;}dl dd:last-child,dl:last-child{margin-bottom:0;}pre{white-space:pre-wrap;width:96%;margin-bottom:24px;overflow:hidden;-webkit-border-radius:3px;background-color:#eee;border:1px solid #ddd;padding:3px 10px;}code{white-space:nowrap;font-size:1.1em;-webkit-border-radius:3px;background-color:#eee;border:1px solid #ddd;padding:2px;}pre code{white-space:pre-wrap;border:none;background-color:transparent;-webkit-border-radius:0;padding:0;}blockquote{margin-left:0;margin-right:0;width:96%;border-left:3px solid #ddd;color:#777;padding:0 10px;}table{margin-left:auto;margin-right:auto;margin-bottom:24px;border-bottom:1px solid #ddd;border-right:1px solid #ddd;border-spacing:0;}table th{background-color:#eee;border-top:1px solid #ddd;border-left:1px solid #ddd;padding:3px 10px;}table td{border-top:1px solid #ddd;border-left:1px solid #ddd;padding:3px 10px;}caption{font-size:1.2em;font-weight:700;margin-bottom:5px;}figure{display:block;text-align:center;}#wrapper img{border:none;display:block;max-width:100%;margin:1em auto;}figcaption{font-size:.8em;font-style:italic;}mark{background:#fefec0;padding:1px 3px;}.footnote{font-size:.8em;vertical-align:super;}.footnotes ol{font-weight:700;}.footnotes ol li p{font-weight:400;}.shadow{-webkit-box-shadow:0 2px 4px #999;}.source{text-align:center;font-size:.8em;color:#777;margin:-40px;}p:last-child,ol:last-child,ul:last-child{margin:0;}@media screen{.inverted,.inverted #wrapper{background-color:#1a1a1a!important;color:#bebebe!important;font-family:Helvetica\ Neue, Helvetica, Arial, sans-serif!important;-webkit-font-smoothing:antialiased!important;}.inverted a{color:#308bd8!important;}.inverted hr{color:#666!important;border:0;background-color:#666!important;-webkit-box-shadow:none!important;}.inverted blockquote{color:#999!important;border-color:#333!important;}.inverted mark{background:#bc990b!important;color:#000!important;}.inverted .shadow{-webkit-box-shadow:0 2px 4px #000!important;}#wrapper{background:transparent;margin:40px;}.inverted pre,.inverted code,.inverted table th{background-color:#222!important;border-color:#3c3c3c!important;}.inverted table,.inverted table td{border-color:#3c3c3c!important;}}";
+    horizontalPadding = 0;         // Left and Right padding to use when Auto Zoom is off
+ //   justifyText = 1;                // Should justification be turned on?
+    lineLength = 0;                // Maximum line length (in characters)
+    lineHeight = 1;               // Line spacing ( 1.7 = 170% )
+    monoFontSize = 12;              // Font size to be used for monospaced text
+    monoFontName = CMU Typewriter Text;         // Font to be used for monospaced text (use quotes for multiword names, e.g. "Courier New")
+    default = {                     // Default is applied to all text, unless superseded by a more specific setting
+        fontName = "CMU Serif";           // Font to be used for this feature (e.g. default)
+        fontSize = 13.5;            // Font size to be applied
+        kerning = 0.3;              // Kerning to be applied (look up kerning on internet if you're not sure what this is)
+    };
+    metadata = {                    // Formatting to be applied to the metadata at the top of the document
+        foregroundColor = 7000;
+        kerning = 0.2;
+    };
+    heading = {                     // General heading formatting
+        foregroundColor = 555;
+        backgroundColor = 10000000;
+        bold = 1;                   // Turn on bold if the font supports it
+    };
+    heading1 = {                    // Level 1 headings only
+        fontSize = 17;
+        fontName = "Helvetical Neue";
+        foregroundColor = 555;
+        backgroundColor = 10000000;
+        bold = 1;
+    };
+    heading2 = {
+        fontSize = 15;
+        fontName = "Helvetical Neue";
+        foregroundColor = 555;
+        backgroundColor = 10000000;
+        bold = 1;
+    };
+    codeSpan =     {                // Spans of code, e.g. `this is code`
+        mono = 1;                   // Use the mono font specified earlier
+    };
+    codeBlock = {                   // Verbatim or Code blocks
+        backgroundColor = 08000000;
+        mono = 1;
+    };
+    URL = {                         // Formatting that is applied to "clickable" links
+        foregroundColor = 555;
+        underline = 1;              // 1 = single underline
+                                    // 0 = no underline
+                                    // 2 = thick underline
+                                    // 4 = very thick underline
+                                    // 9 = double underline
+    };
+    bold = {                        // We want bold text to be displayed in bold
+        bold = 1;
+    };
+    italic = {                      // We want italicized text to be displayed in italics
+        italic = 1;
+    };
+    boldAndItalic =     {           // Any guess what we want here?
+        bold = 1;
+        italic = 1;
+    };
+    comment = {                     // HTML comments (e.g. <!-- This is a comment --> )
+        foregroundColor = 8000;
+    };
+    list = {
+        leftIndent = 30;            // Left margin indenting (per list level)
+        rightIndent = 30;           // Right margin indenting (total)
+    };                              // Default for all is 30
+    blockquote = {
+        leftIndent = 30;            // Left margin indenting (per blockquote level)
+        rightIndent = 30;           // Right margin indenting (total)
+    };
+}
