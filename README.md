@@ -17,6 +17,7 @@ The followings are put in `/css-source/`:
 	2. ToC counter. Similar to heading counter, it adds the numbering to the TOC.  
 4. `table`: Adapted from MultiMarkdown Composer 3 with slight modification.
 5. `system-fonts`: a tiny font css setting the main font as "Gill Sans" and code font as "Consolas", with multiple fallback including Chinese fonts.
+	1. `system-fonts-lmodern`: Expect "Latin Modern Roman" and "Latin Modern Mono" exists in system fonts. Otherwise, see [Fonts (Latin Modern)].
 6. `mmdc`: make it looks closer to MultiMarkdown Composer 3's output CSS with minor modification.
 
 A combined css including the related one in the next section is in [css/](https://ickc.github.io/multimarkdown-latex-css/css/multimarkdown-latex.css). See [demo of MMD to HTML output](https://ickc.github.io/multimarkdown-latex-css) and [demo of MMD to LaTeX](https://ickc.github.io/multimarkdown-latex-css/index.pdf) [^ both of which uses the [MultiMarkdown 5](http://fletcherpenney.net/multimarkdown/) to generate, not Jekyll's kramdown]

@@ -1,4 +1,4 @@
-exclude: [.git, .gitignore, .sass-cache, Gemfile, Gemfile.lock, index.md]
+exclude: [.git, .gitignore, .sass-cache, Gemfile, Gemfile.lock, index.md, multimarkdown-latex.sh]
 
 sass:
   style: compressed
