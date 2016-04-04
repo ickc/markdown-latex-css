@@ -8,6 +8,10 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
 	});
 });
 MathJax.Hub.Config({
+	tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true
+	},
 	TeX: {
 		equationNumbers: { autoNumber: "AMS"},
 		extensions: ["[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"]
