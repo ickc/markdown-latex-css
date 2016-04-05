@@ -32,7 +32,7 @@ LaTeX Footer:	mmd-memoir-footer
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script>
 <!-- \begin{comment} -->
-**Table of Contents**
+**Contents**
 
 {{TOC}}
 <!-- \end{comment} -->
