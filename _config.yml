@@ -1,4 +1,28 @@
+full_rebuild: true
+name: "MultiMarkdown LaTeX CSS"
+description: "Using CSS to make the MultiMarkdown to HTML output mimics the MultiMarkdown to LaTeX output"
+domain: ickc.github.io #If you want to force HTTPS, put down the domain without the http: e.g. example.com
+url: https://ickc.github.io #place url
+baseurl: /multimarkdown-latex-css #place folder name if site is served in subfolder
+permalink: /:title.html
+author: #For jekyll-feed
+  name: "Kolen"
+  email: christian.kolen@gmail.com
+  uri: https://ickc.github.io/about/
+
+encoding: utf-8
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
 exclude: [.git, .gitignore, .sass-cache, Gemfile, Gemfile.lock, index.md, multimarkdown-latex.sh]
+
+gems:
+  - jekyll-sitemap
 
 sass:
   style: compressed
