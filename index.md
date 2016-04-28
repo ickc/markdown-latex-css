@@ -68,9 +68,9 @@ done < "$1"
 
 ## Amsthm ##
 
-<!--\begin{conjecture}-->  <div class="conjecture">
+<!--\begin{Conjecture}-->  <div class="Conjecture">
 1+1=2
-<!--\end{conjecture}--></div>
+<!--\end{Conjecture}--></div>
 
 ## List ##
 

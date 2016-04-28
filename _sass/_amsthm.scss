@@ -1,87 +1,87 @@
 /* CSS counter */
 
 html {
-    counter-reset: theorem lemma proposition definition conjecture example postulate problem case;
+    counter-reset: Theorem Lemma Proposition Definition Conjecture Example Postulate Problem Case;
 }
 
 /* style of "before" */
-/** before plain or definition **/
-.conjecture:before,.corollary:before,.definition:before,.example:before,.lemma:before,.postulate:before,.problem:before,.proposition:before,.theorem:before
+/** before plain or Definition **/
+.Conjecture:before,.Corollary:before,.Definition:before,.Example:before,.Lemma:before,.Postulate:before,.Problem:before,.Proposition:before,.Theorem:before
 {
 	font-weight:700;
 	font-style:normal
 }
-/** before remark or proof **/
-.remark:before,.note:before,.case:before,.proof:before
+/** before Remark or proof **/
+.Remark:before,.Note:before,.Case:before,.proof:before
 {
 	font-style:italic
 }
 /* content of "before" (everything goes here) */
-.corollary:before
+.Corollary:before
 {
 	content:"Corollary."
 }
 
-.lemma:before
+.Lemma:before
 {
-	counter-increment: lemma;
-	content:"Lemma " counter(lemma) ". "
+	counter-increment: Lemma;
+	content:"Lemma " counter(Lemma) ". "
 }
 
-.proposition:before
+.Proposition:before
 {
-	counter-increment: proposition;
-	content:"Proposition " counter(proposition) ". "
+	counter-increment: Proposition;
+	content:"Proposition " counter(Proposition) ". "
 }
 
-.theorem:before
+.Theorem:before
 {
-	counter-increment: theorem;
-	content:"Theorem " counter(theorem) ". "
+	counter-increment: Theorem;
+	content:"Theorem " counter(Theorem) ". "
 }
-.definition:before
+.Definition:before
 {
-	counter-increment: definition;
-	content:"Definition " counter(definition) ". "
-}
-
-.conjecture:before
-{
-	counter-increment: conjecture;
-	content:"Conjecture " counter(conjecture) ". "
+	counter-increment: Definition;
+	content:"Definition " counter(Definition) ". "
 }
 
-.example:before
+.Conjecture:before
 {
-	counter-increment: example;
-	content:"Example " counter(example) ". "
+	counter-increment: Conjecture;
+	content:"Conjecture " counter(Conjecture) ". "
 }
 
-.postulate:before
+.Example:before
 {
-	counter-increment: postulate;
-	content:"Postulate " counter(postulate) ". "
+	counter-increment: Example;
+	content:"Example " counter(Example) ". "
 }
 
-.problem:before
+.Postulate:before
 {
-	counter-increment: problem;
-	content:"Problem " counter(problem) ". "
+	counter-increment: Postulate;
+	content:"Postulate " counter(Postulate) ". "
 }
-.remark:before
+
+.Problem:before
+{
+	counter-increment: Problem;
+	content:"Problem " counter(Problem) ". "
+}
+.Remark:before
 {
 	content:"Remark."
 }
 
-.note:before
+.Note:before
 {
 	content:"Note."
 }
 
-.case:before
+.Case:before
 {
-	counter-increment: case;
-	content:"Case " counter(case) ". "
+	counter-increment: Case;
+	content:"Case " counter(Case) ". "
 }
 .proof:before
 {
@@ -89,14 +89,14 @@ html {
 }
 /* main style */
 /** plain **/
-.corollary,.lemma,.proposition,.theorem
+.Corollary,.Lemma,.Proposition,.Theorem
 {
 	display:block;
 	margin:12px 0;
 	font-style:italic
 }
-/** definition, remark or proof **/
-.case,.conjecture,.definition,.example,.note,.postulate,.problem,.proof,.remark
+/** Definition, Remark or proof **/
+.Case,.Conjecture,.Definition,.Example,.Note,.Postulate,.Problem,.proof,.Remark
 {
 	display:block;
 	margin:12px 0;
