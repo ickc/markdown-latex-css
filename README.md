@@ -4,7 +4,7 @@ layout: compress
 
 Using CSS to make the MultiMarkdown to HTML output mimics the MultiMarkdown to LaTeX output.
 
-See [demo here](https://ickc.github.io/multimarkdown-latex-css).
+See [demo here](https://ickc.github.io/markdown-latex-css).
 
 # CSS #
 
@@ -22,11 +22,11 @@ The followings are put in `/css-source/`:
 	1. `system-fonts-lmodern`: Expect "Latin Modern Roman" and "Latin Modern Mono" exists in system fonts. Otherwise, see [Fonts (Latin Modern)].
 6. `mmdc`: make it looks closer to MultiMarkdown Composer 3's output CSS with minor modification.
 
-A combined css including the related one in the next section is in [css/](https://ickc.github.io/multimarkdown-latex-css/css/multimarkdown-latex.css). See [demo of MMD to HTML output](https://ickc.github.io/multimarkdown-latex-css) and [demo of MMD to LaTeX](https://ickc.github.io/multimarkdown-latex-css/index.pdf) [^ both of which uses the [MultiMarkdown 5](http://fletcherpenney.net/multimarkdown/) to generate, not Jekyll's kramdown]
+A combined css including the related one in the next section is in [css/](https://ickc.github.io/markdown-latex-css/css/multimarkdown-latex.css). See [demo of MMD to HTML output](https://ickc.github.io/markdown-latex-css) and [demo of MMD to LaTeX](https://ickc.github.io/markdown-latex-css/index.pdf) [^ both of which uses the [MultiMarkdown 5](http://fletcherpenney.net/multimarkdown/) to generate, not Jekyll's kramdown]
 
 ## Fonts (Latin Modern) ##
 
-A `font.css` is given in [fonts/fonts.css](http://ickc.github.io/multimarkdown-latex-css/fonts/fonts.css).
+A `font.css` is given in [fonts/fonts.css](http://ickc.github.io/markdown-latex-css/fonts/fonts.css).
 
 It loads the Latin Modern Roman as the main fonts and Latin Modern Mono as the code font. The font is chosen to make it looks as close to the LaTeX's as possible. A couple of fallback fonts as well as some Chinese system fonts are added for compatibility.
 
