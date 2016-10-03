@@ -1,10 +1,6 @@
 #!/bin/bash
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
-#Copy scss to /_sass/
-cd css-source
-find . -iname '*.scss' -exec cp '{}' "../_sass/" \;
-
 #build index.html
 cd ..
 multimarkdown index.md > index.html
