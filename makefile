@@ -19,5 +19,11 @@ all: _sass/_amsthm.scss $(MD2HTML) $(MD2PDF)
 
 _sass/_amsthm.scss: $(includePATH)pandoc-amsthm.html
 	pandoc --template=$< $(includePATH)pandoc-amsthm.yml | sed -e 's/<style type="text\/css">//g' -e 's/<\/style>//g' > $@
+
 clean:
 	rm -f _sass/_amsthm.scss $(MD2HTML) $(MD2PDF)
+
+# update submodule
+update:
+	cd submodule/pandoc-amsthm
+	git submodule update
