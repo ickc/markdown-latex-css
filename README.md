@@ -1,7 +1,3 @@
----
-layout: compress
----
-
 Using CSS to make the Markdown to HTML output mimics the Markdown to LaTeX output.
 
 See demo in <https://ickc.github.io/markdown-latex-css/>.
@@ -22,7 +18,7 @@ The followings are put in <_sass/>:
 	1. `system-fonts-lmodern`: Expect "Latin Modern Roman" and "Latin Modern Mono" exists in system fonts. Otherwise, see [Fonts (Latin Modern)].
 6. `mmdc`: make it looks closer to MultiMarkdown Composer 3's output CSS with minor modification.
 
-A combined css including the related one in the next section is in [css/](https://ickc.github.io/markdown-latex-css/css/markdown-latex.css). <!-- add demo here -->
+A combined css including the related one in the next section is in [css/](https://ickc.github.io/markdown-latex-css/css/markdown-latex.css).
 
 ## Fonts (Latin Modern) ##
 

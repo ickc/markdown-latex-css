@@ -17,9 +17,9 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "default"
+      layout: "compress"
 
-exclude: [.git, .gitignore, .sass-cache, Gemfile, Gemfile.lock, index.md, markdown-latex.sh]
+exclude: [.git, .gitignore, .sass-cache, Gemfile, Gemfile.lock, index.md, README.md, makefile]
 
 gems:
   - jekyll-sitemap
