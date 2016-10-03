@@ -13,7 +13,7 @@ all: _sass/_amsthm.scss $(MD2HTML) $(MD2PDF)
 
 %.html: %.md
 	echo -e "---\n---\n" > $@
-	cat $(includePATH)pandoc-amsthm.yml $< | pandoc $(pandocarc) -c https://ickc.github.io/markdown-latex-css/css/markdown-latex.css -c https://ickc.github.io/markdown-latex-css/fonts/fonts.css -H js/mathjax/load-mathjax-cdn.min.html --mathjax >> $@
+	cat $(includePATH)pandoc-amsthm.yml $< | pandoc $(pandocarc) -c https://ickc.github.io/markdown-latex-css/css/markdown-latex-lmodern.css -c https://ickc.github.io/markdown-latex-css/fonts/fonts.css -H js/mathjax/load-mathjax-cdn.min.html --mathjax >> $@
 %.pdf: %.md
 	cat $(includePATH)pandoc-amsthm.yml $< | sed 's/LaTeX/\\LaTeX\\/g' | pandoc $(pandocarc) --include-in-header=<(pandoc --template=$(includePATH)pandoc-amsthm.latex $(includePATH)pandoc-amsthm.yml) -M documentclass=memoir -M classoption=article -o $@
 
