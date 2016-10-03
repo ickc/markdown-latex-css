@@ -26,4 +26,3 @@ clean:
 # update submodule
 update:
 	git submodule foreach git pull origin master
-	git commit -am "Pulled down update to submodules"
