@@ -25,5 +25,5 @@ clean:
 
 # update submodule
 update:
-	cd submodule/pandoc-amsthm
-	git submodule update
+	git submodule foreach git pull origin master
+	git commit -am "Pulled down update to submodules"
