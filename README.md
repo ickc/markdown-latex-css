@@ -2,7 +2,7 @@
 layout: compress
 ---
 
-Using CSS to make the MultiMarkdown to HTML output mimics the MultiMarkdown to LaTeX output.
+Using CSS to make the Markdown to HTML output mimics the Markdown to LaTeX output.
 
 See [demo here](https://ickc.github.io/markdown-latex-css).
 
@@ -10,7 +10,7 @@ See [demo here](https://ickc.github.io/markdown-latex-css).
 
 ## Custom CSS ##
 
-The followings are put in `/css-source/`:
+The followings are put in <_sass/>:
 
 1. `amsthm`: Mimics amsthm package in MultiMarkdown via CSS. See the [README in the corresponding folder](css-source/amsthm/README.md). For MultiMarkdown to LaTeX with amsthm, see [ickc/peg-multimarkdown-latex-support: Default support files for generating LaTeX documents with MMD 3 through MMD 5](https://github.com/ickc/peg-multimarkdown-latex-support).
 2. `list`: Replicated the different type of list in different levels of a *nested list* in LaTeX. See the [README in the corresponding folder](css-source/list/README.md)
