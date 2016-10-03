@@ -9,7 +9,7 @@ See demo in <https://ickc.github.io/markdown-latex-css/>.
 The followings are put in <_sass/>:
 
 1. `amsthm`: See ickc/pandoc-amsthm
-2. `list`: Replicated the different type of styles in different levels of a *nested list* in LaTeX[^list].
+2. `list`: Replicated the different type of styles in different levels of a *nested list* in LaTeX.[^list]
 3. `heading` and `toc`:
 	1. Heading counter: Replicate the numbering in headings.  
 	2. ToC counter. Similar to heading counter, it adds the numbering to the TOC.  
