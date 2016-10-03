@@ -26,7 +26,7 @@ A combined css including the related one in the next section is in [css/](https:
 
 ## Fonts (Latin Modern) ##
 
-A `font.css` is given in [fonts/fonts.css](http://ickc.github.io/markdown-latex-css/fonts/fonts.css) which loads web fonts rather than system fonts.
+A `font.css` is given in [fonts/fonts.css](https://ickc.github.io/markdown-latex-css/fonts/fonts.css) which loads web fonts rather than system fonts.
 
 It loads the Latin Modern Roman as the main fonts and Latin Modern Mono as the code font. The font is chosen to make it looks as close to the LaTeX's as possible. A couple of fallback fonts as well as some Chinese system fonts are added for compatibility.
 
@@ -41,14 +41,14 @@ They are not included in the combined css mentioned above, since it is huge. If 
 
 ## Setup Files ##
 
-There's 2 JS setup in `/js-setup/` as well:
+There's 2 JS setup in `/js/` as well:
 
-1. [MathJax](js-setup/mathjax-setup/load-mathjax-cdn.html): loading
+1. [MathJax](js/mathjax/load-mathjax-cdn.html): loading
 	1. Cancel extension
 	2. equation numbering
 	3. a semi-finished Physics extension I wrote
 	4. siunitx
-2. [Highlight.js](js-setup/highlight-setup/load-highlight-cdn.min.html)
+2. [Highlight.js](js/highlight/load-highlight-cdn.min.html)
 
 # References #
 
