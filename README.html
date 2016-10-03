@@ -1,0 +1,108 @@
+---
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/css/markdown-latex.css" type="text/css" />
+  <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/fonts/fonts.css" type="text/css" />
+  <script type="text/x-mathjax-config"> MathJax.Ajax.config.path["Contrib"]="https://cdn.mathjax.org/mathjax/contrib"; MathJax.Hub.Register.StartupHook("TeX Jax Ready",function (){MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{cancel: ["Extension","cancel"], bcancel: ["Extension","cancel"], xcancel: ["Extension","cancel"], cancelto: ["Extension","cancel"]});}); MathJax.Hub.Config({tex2jax:{inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}, TeX:{equationNumbers:{autoNumber: "AMS"}, extensions: ["[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"]}});</script><script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full"></script>
+</head>
+<body>
+<div id="TOC">
+<ul>
+<li><a href="#css"><span class="toc-section-number">1</span> CSS</a><ul>
+<li><a href="#custom-css"><span class="toc-section-number">1.1</span> Custom CSS</a></li>
+<li><a href="#fonts-latin-modern"><span class="toc-section-number">1.2</span> Fonts (Latin Modern)</a></li>
+<li><a href="#css-from-marked-2"><span class="toc-section-number">1.3</span> CSS From Marked 2</a></li>
+</ul></li>
+<li><a href="#js"><span class="toc-section-number">2</span> JS</a><ul>
+<li><a href="#setup-files"><span class="toc-section-number">2.1</span> Setup Files</a></li>
+</ul></li>
+<li><a href="#references"><span class="toc-section-number">3</span> References</a></li>
+</ul>
+</div>
+<p>Using CSS to make the Markdown to HTML output mimics the Markdown to LaTeX output.</p>
+<p>See demo in <a href="https://ickc.github.io/markdown-latex-css/" class="uri">https://ickc.github.io/markdown-latex-css/</a>.</p>
+<h1 id="css"><span class="header-section-number">1</span> CSS</h1>
+<h2 id="custom-css"><span class="header-section-number">1.1</span> Custom CSS</h2>
+<p>The followings are put in &lt;_sass/&gt;:</p>
+<ol style="list-style-type: decimal">
+<li><code>amsthm</code>: See ickc/pandoc-amsthm</li>
+<li><code>list</code>: Replicated the different type of styles in different levels of a <em>nested list</em> in LaTeX.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<li><code>heading</code> and <code>toc</code>:
+<ol style="list-style-type: decimal">
+<li>Heading counter: Replicate the numbering in headings.<br />
+</li>
+<li>ToC counter. Similar to heading counter, it adds the numbering to the TOC.<br />
+</li>
+</ol></li>
+<li><code>table</code>: Adapted from MultiMarkdown Composer 3 with slight modification.</li>
+<li><code>system-fonts</code>: a tiny font css setting the main font as &quot;Gill Sans&quot; and code font as &quot;Consolas&quot;, with multiple fallback including Chinese fonts.
+<ol style="list-style-type: decimal">
+<li><code>system-fonts-lmodern</code>: Expect &quot;Latin Modern Roman&quot; and &quot;Latin Modern Mono&quot; exists in system fonts. Otherwise, see <a href="#fonts-latin-modern">Fonts (Latin Modern)</a>.</li>
+</ol></li>
+<li><code>mmdc</code>: make it looks closer to MultiMarkdown Composer 3's output CSS with minor modification.</li>
+</ol>
+<p>A combined css including the related one in the next section is in <a href="https://ickc.github.io/markdown-latex-css/css/markdown-latex.css">css/</a>.</p>
+<h2 id="fonts-latin-modern"><span class="header-section-number">1.2</span> Fonts (Latin Modern)</h2>
+<p>A <code>font.css</code> is given in <a href="https://ickc.github.io/markdown-latex-css/fonts/fonts.css">fonts/fonts.css</a> which loads web fonts rather than system fonts.</p>
+<p>It loads the Latin Modern Roman as the main fonts and Latin Modern Mono as the code font. The font is chosen to make it looks as close to the LaTeX's as possible. A couple of fallback fonts as well as some Chinese system fonts are added for compatibility.</p>
+<p>They are not included in the combined css mentioned above, since it is huge. If you need to load it, load it after the combined css.</p>
+<h2 id="css-from-marked-2"><span class="header-section-number">1.3</span> CSS From Marked 2</h2>
+<ul>
+<li><code>/css-marked2/</code> are extracted from <a href="http://marked2app.com">Marked2</a>. The license of each individual CSS are in the files itself.</li>
+<li><code>/css-marked2-preview/</code> contains previews of some of the css</li>
+</ul>
+<h1 id="js"><span class="header-section-number">2</span> JS</h1>
+<h2 id="setup-files"><span class="header-section-number">2.1</span> Setup Files</h2>
+<p>There's 2 JS setup in <code>/js/</code> as well:</p>
+<ol style="list-style-type: decimal">
+<li><a href="js/mathjax/load-mathjax-cdn.html">MathJax</a>: loading
+<ol style="list-style-type: decimal">
+<li>Cancel extension</li>
+<li>equation numbering</li>
+<li>a semi-finished Physics extension I wrote</li>
+<li>siunitx</li>
+</ol></li>
+<li><a href="js/highlight/load-highlight-cdn.min.html">Highlight.js</a></li>
+</ol>
+<h1 id="references"><span class="header-section-number">3</span> References</h1>
+<ul>
+<li><a href="http://www.w3schools.com/cssref/pr_list-style-type.asp">CSS list-style-type property</a>
+<ul>
+<li>Also see: <a href="http://www.w3schools.com/css/css_list.asp">CSS Styling Lists</a>, <a href="http://www.w3schools.com/tags/att_li_type.asp">HTML li type Attribute</a></li>
+</ul></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters">Using CSS counters - CSS | MDN</a><br />
+</li>
+<li><a href="http://www.gust.org.pl/projects/e-foundry/latin-modern/download">LM downloads --- GUST</a></li>
+<li><a href="http://www.fontsquirrel.com/fonts/list/find_fonts?q%5Bterm%5D=latin+modern&amp;q%5Bsearch_check%5D=Y">Latin Modern --- Font Squirrel</a></li>
+</ul>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><code>_list.scss</code> supports different styles in different levels (up to 6 levels) of a nested list.</p>
+<ol style="list-style-type: decimal">
+<li>ordered list:
+<ul>
+<li>In ordered list, up to level 4, the <code>_list.scss</code> provides the same styling as the LaTeX output. 2 more styling is given in level 5 &amp; 6, but are unrelated to LaTeX's styling.</li>
+<li>LaTeX will have error and complain the nesting is too deep beyond level 4. Something need to be done on the LaTeX's side (<em>e.g.</em> you repeat the nesting, <em>i.e.</em> level 5 use the numbering in level 1, etc.) <em>or</em> you can make the level 5 as an unordered list to get around the issue.</li>
+</ul></li>
+</ol>
+<ul>
+<li>unordered list:
+<ul>
+<li>It is not replicating the LaTeX result because those bullets are not available in CSS.</li>
+<li>It repeat the use of 3 styles twice to achieve a total level of 6.</li>
+</ul></li>
+</ul>
+<a href="#fnref1">↩</a></li>
+</ol>
+</div>
+</body>
+</html>

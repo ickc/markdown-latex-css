@@ -1,41 +1,11 @@
 ---
-HTML Header:	<script type="text/x-mathjax-config">MathJax.Ajax.config.path.Contrib="https://cdn.mathjax.org/mathjax/contrib",MathJax.Hub.Register.StartupHook("TeX Jax Ready",function(){MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{cancel:["Extension","cancel"],bcancel:["Extension","cancel"],xcancel:["Extension","cancel"],cancelto:["Extension","cancel"]})}),MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"},extensions:["[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"]}});</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full"></script>
-CSS:	https://ickc.github.io/markdown-latex-css/css/multimarkdown-latex-lmodern.css
-CSS:	https://ickc.github.io/markdown-latex-css/fonts/fonts.css
-HTML Header Level:	1
-LaTeX Header Level:	2
-LaTeX Input:	mmd-article-header
-LaTeX input:	mmd-natbib-plain
-LaTeX Input:	mmd-load-physics-related
-LaTeX Input:	mmd-load-tables-related
-LaTeX Input:	mmd-load-pdfpages
-LaTeX Input:	mmd-load-headings
-thmd:	chapter
-LaTeX Input:	mmd-load-amsthm
-Title:	MultiMarkdown LaTeX CSS
-Subtitle:	Using CSS to make the MultiMarkdown to HTML output mimics the MultiMarkdown to LaTeX output
-Keywords:	mmd, latex, css
-Revision:	0.2
-Language:	English
-Author:	Kolen Cheung
-Email:	khcheung@berkeley.edu
-Affiliation:	University of California, Berkeley
-Copyright:	2016 Kolen Cheung  
- 	All Rights Reserved.
-LaTeX Mode:	memoir
-LaTeX Input:	mmd-article-begin-doc
-tocd:	5
-secd:	5
-LaTeX Input:	mmd-load-toc-setcounter
-LaTeX Input:	mmd-load-toc
-LaTeX Footer:	mmd-memoir-footer
----
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script>
-<!-- \begin{comment} -->
-**Contents**
+title:	Markdown LaTeX CSS
+fontfamily:	lmodern,siunitx,cancel,physics,placeins
+...
 
-{{TOC}}
-<!-- \end{comment} -->
+Go to the [repository here](https://github.com/ickc/markdown-latex-css).
+
+For the demos, see [README.html](README.html), [README.pdf](README.pdf), [index.html](index.html), [index.pdf](index.pdf). These demonstrates using the provided CSS and JS setup to mimics the LaTeX output in HTML.
 
 # Testing #
 
@@ -43,15 +13,15 @@ LaTeX Footer:	mmd-memoir-footer
 
 Physics:
 
-\\[\begin{equation}
+\begin{equation}
 \ket{\upsilon}
-\end{equation}\\]
+\end{equation}
 
 Cancel:
 
-\\[\begin{equation}
+\begin{equation}
 \cancel{p}
-\end{equation}\\]
+\end{equation}
 
 Also see the equation numbering above.
 
@@ -68,9 +38,11 @@ done < "$1"
 
 ## Amsthm ##
 
-<!--\begin{Conjecture}-->  <div class="Conjecture">
+<div class="Conjecture">
+
 1+1=2
-<!--\end{Conjecture}--></div>
+
+</div>
 
 ## List ##
 
@@ -110,4 +82,4 @@ This one uses Latin Modern Roman and Mono (see the texts and codes), matching th
 | test	| -ing	|  
 |  ------	| ------	|  
 | 1	| 2  	| 
-| 3	| 4	| 
+| 3	| 4	|  

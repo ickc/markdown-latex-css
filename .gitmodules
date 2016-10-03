@@ -1,0 +1,3 @@
+[submodule "submodule/pandoc-amsthm"]
+	path = submodule/pandoc-amsthm
+	url = https://github.com/ickc/pandoc-amsthm
