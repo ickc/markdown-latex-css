@@ -11,7 +11,20 @@
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/css/markdown-latex-lmodern.css" type="text/css" />
   <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/fonts/fonts.css" type="text/css" />
-  <script type="text/x-mathjax-config"> MathJax.Ajax.config.path["Contrib"]="https://cdn.mathjax.org/mathjax/contrib"; MathJax.Hub.Register.StartupHook("TeX Jax Ready",function (){MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{cancel: ["Extension","cancel"], bcancel: ["Extension","cancel"], xcancel: ["Extension","cancel"], cancelto: ["Extension","cancel"]});}); MathJax.Hub.Config({tex2jax:{inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}, TeX:{equationNumbers:{autoNumber: "AMS"}, extensions: ["[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"]}});</script><script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full"></script>
+  <!-- setup MathJax to use physics package, SIUnitX package, cancel package, equation numbering, and dollar sign -->
+  <script type="text/x-mathjax-config">
+    MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+    MathJax.Hub.Config({
+    	TeX: {
+    		equationNumbers: { autoNumber: "AMS"},
+    		extensions: ["cancel.js","[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"]
+    	}
+    });
+  </script>
+  <!-- Load MathJax -->
+  <script type="text/javascript"
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full">
+  </script>
 </head>
 <body>
 <div id="TOC">
@@ -31,7 +44,7 @@
 <p>See demo in <a href="https://ickc.github.io/markdown-latex-css/" class="uri">https://ickc.github.io/markdown-latex-css/</a>.</p>
 <h1 id="css"><span class="header-section-number">1</span> CSS</h1>
 <h2 id="custom-css"><span class="header-section-number">1.1</span> Custom CSS</h2>
-<p>The followings are put in &lt;_sass/&gt;:</p>
+<p>The followings are put in <a href="_sass/"><code>_sass/</code></a>:</p>
 <ol style="list-style-type: decimal">
 <li><code>amsthm</code>: See ickc/pandoc-amsthm</li>
 <li><code>list</code>: Replicated the different type of styles in different levels of a <em>nested list</em> in LaTeX.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>

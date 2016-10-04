@@ -14,7 +14,13 @@ For the demos, see [README.html](README.html), [README.pdf](README.pdf), [index.
 Physics:
 
 \begin{equation}
-\ket{\upsilon}
+\ket{\psi}
+\end{equation}
+
+SIunitx:
+
+\begin{equation}
+c = \SI{299792458}{\m\per\s}
 \end{equation}
 
 Cancel:

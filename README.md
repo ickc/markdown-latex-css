@@ -6,7 +6,7 @@ See demo in <https://ickc.github.io/markdown-latex-css/>.
 
 ## Custom CSS ##
 
-The followings are put in <_sass/>:
+The followings are put in [`_sass/`](_sass/):
 
 1. `amsthm`: See ickc/pandoc-amsthm
 2. `list`: Replicated the different type of styles in different levels of a *nested list* in LaTeX.[^list]
