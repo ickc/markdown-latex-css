@@ -39,12 +39,14 @@ They are not included in the combined css mentioned above, since it is huge. If 
 
 There's 2 JS setup in `/js/` as well:
 
-1. [MathJax](js/mathjax/load-mathjax-cdn.html): loading
-	1. Cancel extension
-	2. equation numbering
-	3. a semi-finished Physics extension I wrote
-	4. siunitx
-2. [Highlight.js](js/highlight/load-highlight-cdn.min.html)
+1. [MathJax](js/mathjax/):
+	1. [`setup-mathjax-cdn.html`](js/mathjax/setup-mathjax-cdn.html): setup MathJax
+		1. Cancel extension
+		2. equation numbering
+		3. a semi-finished Physics extension I wrote
+		4. siunitx
+	2. [`load-mathjax-cdn.html`](js/mathjax/load-mathjax-cdn.html): load MathJax itself. It should be included after the `setup-mathjax-cdn`.
+2. [Highlight.js](js/highlight/load-highlight-cdn.html)
 
 # References #
 

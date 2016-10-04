@@ -11,7 +11,6 @@
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/css/markdown-latex-lmodern.css" type="text/css" />
   <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/fonts/fonts.css" type="text/css" />
-  <!-- setup MathJax to use physics package, SIUnitX package, cancel package, equation numbering, and dollar sign -->
   <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
     MathJax.Hub.Config({
@@ -21,7 +20,6 @@
     	}
     });
   </script>
-  <!-- Load MathJax -->
   <script type="text/javascript"
   	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full">
   </script>
@@ -76,14 +74,18 @@
 <h2 id="setup-files"><span class="header-section-number">2.1</span> Setup Files</h2>
 <p>There's 2 JS setup in <code>/js/</code> as well:</p>
 <ol style="list-style-type: decimal">
-<li><a href="js/mathjax/load-mathjax-cdn.html">MathJax</a>: loading
+<li><a href="js/mathjax/">MathJax</a>:
+<ol style="list-style-type: decimal">
+<li><a href="js/mathjax/setup-mathjax-cdn.html"><code>setup-mathjax-cdn.html</code></a>: setup MathJax
 <ol style="list-style-type: decimal">
 <li>Cancel extension</li>
 <li>equation numbering</li>
 <li>a semi-finished Physics extension I wrote</li>
 <li>siunitx</li>
 </ol></li>
-<li><a href="js/highlight/load-highlight-cdn.min.html">Highlight.js</a></li>
+<li><a href="js/mathjax/load-mathjax-cdn.html"><code>load-mathjax-cdn.html</code></a>: load MathJax itself. It should be included after the <code>setup-mathjax-cdn</code>.</li>
+</ol></li>
+<li><a href="js/highlight/load-highlight-cdn.html">Highlight.js</a></li>
 </ol>
 <h1 id="references"><span class="header-section-number">3</span> References</h1>
 <ul>
