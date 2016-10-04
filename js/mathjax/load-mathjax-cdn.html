@@ -1,26 +1,3 @@
-<!-- setup MathJax to use physics package, SIUnitX package, cancel package, equation numbering, and dollar sign -->
-<script type="text/x-mathjax-config">
-  MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
-  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
-  	MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
-  		cancel: ["Extension","cancel"],
-  		bcancel: ["Extension","cancel"],
-  		xcancel: ["Extension","cancel"],
-  		cancelto: ["Extension","cancel"]
-  	});
-  });
-  MathJax.Hub.Config({
-  	tex2jax: {
-  		inlineMath: [['$','$'], ['\\(','\\)']],
-  		processEscapes: true
-  	},
-  	TeX: {
-  		equationNumbers: { autoNumber: "AMS"},
-  		extensions: ["[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"]
-  	}
-  });
-</script>
-<!-- Load MathJax -->
 <script type="text/javascript"
 	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full">
 </script>
