@@ -63,4 +63,4 @@ v%:
 	git commit -m 'make css'
 	git tag -a $@ -m 'Deploy to jsdelivr' && git push origin $@
 	git checkout -
-	git branch -d dist
+	git branch -D dist
