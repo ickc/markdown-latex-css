@@ -57,4 +57,8 @@ normalize:
 	find . \! -path '*/submodule/*' -iname "*.css" | xargs -i -n1 -P8 bash -c 'printf "\n\n" >> "$$0" && sed -i -e '"'"'/./,/^$$/!d'"'"' -e '"'"'s/[ \t]*$$//'"'"' $$0' {}
 
 v%:
+	git checkout -b dist
+	make clean && make css -j8
+	git commit -m 'make css'
 	git tag -a $@ -m 'Deploy to jsdelivr' && git push origin $@
+	git branch -d dist
