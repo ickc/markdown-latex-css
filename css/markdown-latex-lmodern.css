@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Latin Modern Roman', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, STFangSong, "华文仿宋", FangSong, "仿宋", serif;
+}
+
+pre, code{
+    font-family: 'Latin Modern Mono', Consolas, "Liberation Mono", Menlo, Courier, "PingFang HK", "蘋方-港", "PingFang TC", "蘋方-繁", "PingFang SC", "蘋方-簡", "PingFang", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", monospace;
+}
+
+body {
+    background: #eee;
+    color: #000;
+    font-size: 14px;
+    line-height: 135%;
+    text-align: justify;
+}
+del {
+    background: #fae6e6;
+}
+ins {
+    background: #ecfce6
+}
+a.footnote,
+a.citation {
+    font-size: 0.83em;
+    vertical-align: super;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ol ol ol ol{
+    list-style-type: upper-alpha;
+}
+
+ol ol ol ol ol{
+    list-style-type: upper-roman;
+}
+
+ol ol ol ol ol ol{
+    list-style-type: lower-greek;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ul ul ul {
+    list-style-type: square;
+}
+
+ul ul ul ul {
+    list-style-type: disc;
+}
+
+ul ul ul ul ul {
+    list-style-type: circle;
+}
+
+ul ul ul ul ul ul {
+    list-style-type: square;
+}
+
+th {
+    padding: 1px;
+}
+td {
+    padding: 5px;
+}
+
+/* From MultiMarkdown Composer 3 */
+table {
+    border: solid black;
+    border-width: 2px 0px;
+    empty-cells: hide;
+    border-spacing: 0px;
+    padding: 2px;
+    margin: 20px auto;
+}
+table caption {
+    margin: 5px;
+    text-align: center;
+    caption-side: bottom;
+}
+thead th {
+    border: solid gray;
+    border-width: 0 0 2px 0;
+    padding: 5px;
+}
+thead > tr:last-child > th {
+    border-style: none;
+}
+tbody > tr:first-child > td {
+    border: solid gray;
+    border-width: 1px 0 0 0;
+}
+tbody > tr:first-child > th {
+    border: solid gray;
+    border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > td {
+    border: solid black;
+    border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > th {
+    border: solid black;
+    border-width: 1px 0 0 0;
+}
+
+img {
+    max-width: 100%;
+    zoom: 50%;
+}
+
+.TOC {
+	font-weight: bold;
+}
+
+.TOC ul {
+  counter-reset: section;
+  list-style-type: none;
+}
+.TOC li::before {
+  counter-increment: section;
+  content: counters(section,".") ". ";
+}
+
+/* reference from http://philarcher.org/diary/2013/headingnumbers/ */
+body {
+    counter-reset: h1
+}
+h1 {
+    counter-reset: h2
+}
+h2 {
+    counter-reset: h3
+}
+h3 {
+    counter-reset: h4
+}
+h4 {
+    counter-reset: h5
+}
+h5 {
+    counter-reset: h6
+}
+h1:before {
+	counter-increment: h1;
+	content: counter(h1) ". "
+}
+h2:before {
+	counter-increment: h2;
+	content: counter(h1) "." counter(h2) ". "
+}
+h3:before {
+	counter-increment: h3;
+	content: counter(h1) "." counter(h2) "." counter(h3) ". "
+}
+h4:before {
+	counter-increment: h4;
+	content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "
+}
+h5:before {
+	counter-increment: h5;
+	content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+h6:before {
+	counter-increment: h6;
+	content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+h1.nocount:before,
+h2.nocount:before,
+h3.nocount:before,
+h4.nocount:before,
+h5.nocount:before,
+h6.nocount:before {
+	counter-increment: none;
+	content: ""
+}
+
+/* CSS counter */
+html {
+	counter-reset: Theorem Definition Conjecture Example Postulate Problem Case ;
+}
+/* style of "before" */
+/** before plain or definition **/
+.Theorem:before,.Lemma:before,.Proposition:before,.Corollary:before,.Definition:before,.Conjecture:before,.Example:before,.Postulate:before,.Problem:before,.proof:before
+{
+	font-weight:700;
+	font-style:normal
+}
+/** before remark or proof **/
+.Case:before,.Remark:before,.Note:before,.proof:before
+{
+	font-style:italic
+}
+/* content of "before" (everything goes here) */
+.Theorem:before
+{
+	counter-increment: Theorem;
+	content:"Theorem " counter(Theorem) ". "
+}
+.Lemma:before
+{
+	content:"Lemma."
+}
+.Proposition:before
+{
+	content:"Proposition."
+}
+.Corollary:before
+{
+	content:"Corollary."
+}
+.Definition:before
+{
+	counter-increment: Definition;
+	content:"Definition " counter(Definition) ". "
+}
+.Conjecture:before
+{
+	counter-increment: Conjecture;
+	content:"Conjecture " counter(Conjecture) ". "
+}
+.Example:before
+{
+	counter-increment: Example;
+	content:"Example " counter(Example) ". "
+}
+.Postulate:before
+{
+	counter-increment: Postulate;
+	content:"Postulate " counter(Postulate) ". "
+}
+.Problem:before
+{
+	counter-increment: Problem;
+	content:"Problem " counter(Problem) ". "
+}
+.Case:before
+{
+	counter-increment: Case;
+	content:"Case " counter(Case) ". "
+}
+.Remark:before
+{
+	content:"Remark."
+}
+.Note:before
+{
+	content:"Note."
+}
+.proof:before
+{
+	content:"Proof."
+}
+/* main style */
+/** plain **/
+.Theorem,.Lemma,.Proposition,.Corollary,,.proof
+{
+	display:block;
+	margin:12px 0;
+	font-style:italic
+}
+/** definition, remark or proof **/
+.Definition,.Conjecture,.Example,.Postulate,.Problem,.Case,.Remark,.Note,,.proof
+{
+	display:block;
+	margin:12px 0;
+	font-style:normal
+}
+/* after proof */
+.proof:after
+{
+	content:"\25FB";
+	float:right
+}
+
