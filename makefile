@@ -30,7 +30,7 @@ Clean:
 # rules ################################################################
 
 %.html: %.md
-	pandoc $(pandocarc) -c https://ickc.github.io/markdown-latex-css/css/markdown-latex-lmodern.css -c https://ickc.github.io/markdown-latex-css/fonts/fonts.css -H js/setup-mathjax-cdn.html --mathjax $< > $@
+	pandoc $(pandocarc) -c https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css@0.2/css/pandoc-latex-lmodern.css -c https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css@0.2/fonts/fonts.css -H js/mathjax/setup-mathjax-cdn.html --mathjax $< > $@
 
 %.pdf: %.md
 	cat $(includePATH)/default.yml $< | sed 's/LaTeX/\\LaTeX\\/g' | pandoc $(pandocarc) --include-in-header=$(includePATH)/default.tex -M documentclass=memoir -M classoption=article -o $@
