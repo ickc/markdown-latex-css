@@ -1,8 +1,4 @@
----
----
-@charset "UTF-8";
-
-@import "list";
-@import "toc";
-@import "heading";
-@import "img";
+list
+toc
+heading
+img

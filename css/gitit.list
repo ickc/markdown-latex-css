@@ -1,12 +1,8 @@
----
----
-@charset "UTF-8";
-
-@import "system-fonts-lmodern";
-@import "mmdc";
-@import "list";
-@import "table";
-@import "img";
-@import "toc-id";
-@import "heading-wikipage";
-@import "amsthm";
+system-fonts-lmodern
+mmdc
+list
+table
+img
+toc-id
+heading-wikipage
+amsthm

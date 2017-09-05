@@ -1,9 +1,5 @@
----
----
-@charset "UTF-8";
-
-@import "system-fonts-lmodern";
-@import "mmdc-print";
-@import "list";
-@import "table";
-@import "img";
+system-fonts-lmodern
+mmdc-print
+list
+table
+img
