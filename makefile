@@ -9,8 +9,8 @@ filterPATH = $(amsthmPATH)/bin
 includePATH = $(amsthmPATH)/template/include
 pandocarc = --top-level-division=chapter --toc --toc-depth=6 -N --normalize -V linkcolorblue -V citecolor=blue -V urlcolor=blue -V toccolor=blue --filter=$(filterPATH)/pandoc-amsthm.py -f markdown-fancy_lists
 
-LIST = $(wildcard css-list/*.list)
-CSS = $(patsubst css-list/%.list, css/%.css, $(LIST))
+LIST = $(wildcard css-list/*.txt)
+CSS = $(patsubst css-list/%.txt, css/%.css, $(LIST))
 CSSALL = css/_amsthm.css $(CSS)
 
 # targets ##############################################################
@@ -39,7 +39,7 @@ css/_amsthm.css: $(includePATH)/default.html
 	sed -e 's/<style type="text\/css">//g' -e 's/<\/style>//g' $< > $@
 
 # combined CSS
-css/%.css: css-list/%.list
+css/%.css: css-list/%.txt
 	printf "%s\n" '@charset "UTF-8";' > $@
 	sed 's/^\(.*\)$$/css\/_\1\.css/g' $< | xargs cat | sed 's/@charset "UTF-8";//g' >> $@
 
