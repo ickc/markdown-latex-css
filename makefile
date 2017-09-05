@@ -9,19 +9,23 @@ filterPATH = $(amsthmPATH)/bin
 includePATH = $(amsthmPATH)/template/include
 pandocarc = --chapters --toc --toc-depth=6 -N --normalize -V linkcolorblue -V citecolor=blue -V urlcolor=blue -V toccolor=blue --filter=$(filterPATH)/pandoc-amsthm.py
 
-LIST = $(wildcard css/*.list)
-CSS = css/_amsthm.css $(patsubst %.list, %.css, $(LIST))
+LIST = $(wildcard css-list/*.list)
+CSS = $(patsubst css-list/%.list, css/%.css, $(LIST))
+CSSAll = css/_amsthm.css $(CSS)
 
 # targets ##############################################################
 
 all: css docs
 
-css: $(CSS) normalize
+css: $(CSSALL) normalize
 
 docs: $(MD2HTML) $(MD2PDF)
 
 clean:
-	rm -f $(CSS) $(MD2HTML) $(MD2PDF)
+	rm -f $(CSS)
+
+Clean:
+	rm -f $(CSSALL) $(MD2HTML) $(MD2PDF)
 
 # rules ################################################################
 
@@ -35,7 +39,7 @@ css/_amsthm.css: $(includePATH)/default.html
 	sed -e 's/<style type="text\/css">//g' -e 's/<\/style>//g' $< > $@
 
 # combined CSS
-%.css: %.list
+css/%.css: css-list/%.list
 	printf "%s\n" '@charset "UTF-8";' > $@
 	sed 's/^\(.*\)$$/css\/_\1\.css/g' $< | xargs cat | sed 's/@charset "UTF-8";//g' >> $@
 
