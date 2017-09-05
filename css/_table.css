@@ -43,3 +43,4 @@ thead + tbody > tr:first-child > th {
     border: solid black;
     border-width: 1px 0 0 0;
 }
+

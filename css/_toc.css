@@ -10,3 +10,4 @@
   counter-increment: section;
   content: counters(section,".") ". ";
 }
+
