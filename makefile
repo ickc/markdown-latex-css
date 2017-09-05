@@ -61,4 +61,5 @@ v%:
 	make clean && make css -j8
 	git commit -m 'make css'
 	git tag -a $@ -m 'Deploy to jsdelivr' && git push origin $@
+	git checkout -
 	git branch -d dist
