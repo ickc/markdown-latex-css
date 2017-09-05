@@ -11,7 +11,7 @@ pandocarc = --top-level-division=chapter --toc --toc-depth=6 -N --normalize -V l
 
 LIST = $(wildcard css-list/*.list)
 CSS = $(patsubst css-list/%.list, css/%.css, $(LIST))
-CSSAll = css/_amsthm.css $(CSS)
+CSSALL = css/_amsthm.css $(CSS)
 
 # targets ##############################################################
 
