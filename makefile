@@ -51,3 +51,6 @@ update:
 ### 3. delete trailing whitespace (spaces, tabs) from end of each line
 normalize:
 	find . \! -path '*/submodule/*' -iname "*.css" | xargs -i -n1 -P8 bash -c 'printf "\n\n" >> "$$0" && sed -i -e '"'"'/./,/^$$/!d'"'"' -e '"'"'s/[ \t]*$$//'"'"' $$0' {}
+
+v%:
+	git tag -a $@ -m 'Deploy to jsdelivr' && git push origin $@
