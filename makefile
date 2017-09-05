@@ -7,7 +7,7 @@ MD2PDF = $(patsubst %.md, %.pdf, $(MD))
 amsthmPATH = submodule/pandoc-amsthm
 filterPATH = $(amsthmPATH)/bin
 includePATH = $(amsthmPATH)/template/include
-pandocarc = --chapters --toc --toc-depth=6 -N --normalize -V linkcolorblue -V citecolor=blue -V urlcolor=blue -V toccolor=blue --filter=$(filterPATH)/pandoc-amsthm.py
+pandocarc = --top-level-division=chapter --toc --toc-depth=6 -N --normalize -V linkcolorblue -V citecolor=blue -V urlcolor=blue -V toccolor=blue --filter=$(filterPATH)/pandoc-amsthm.py -f markdown-fancy_lists
 
 LIST = $(wildcard css-list/*.list)
 CSS = $(patsubst css-list/%.list, css/%.css, $(LIST))
@@ -30,7 +30,7 @@ Clean:
 # rules ################################################################
 
 %.html: %.md
-	pandoc $(pandocarc) -c https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css@0.2/css/pandoc-latex-lmodern.css -c https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css@0.2/fonts/fonts.css -H js/mathjax/setup-mathjax-cdn.html --mathjax $< > $@
+	pandoc $(pandocarc) -c https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css@0.2/css/pandoc-latex-lmodern.css -c https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css@0.2/fonts/fonts.css -H js/setup-mathjax-cdn.html --mathjax $< > $@
 
 %.pdf: %.md
 	cat $(includePATH)/default.yml $< | sed 's/LaTeX/\\LaTeX\\/g' | pandoc $(pandocarc) --include-in-header=$(includePATH)/default.tex -M documentclass=memoir -M classoption=article -o $@
