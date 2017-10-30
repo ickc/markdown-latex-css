@@ -7,7 +7,7 @@ MD2PDF = $(patsubst %.md, %.pdf, $(MD))
 amsthmPATH = submodule/pandoc-amsthm
 filterPATH = $(amsthmPATH)/bin
 includePATH = $(amsthmPATH)/template/include
-pandocarc = --top-level-division=chapter --toc --toc-depth=6 -N --normalize -V linkcolorblue -V citecolor=blue -V urlcolor=blue -V toccolor=blue --filter=$(filterPATH)/pandoc-amsthm.py -f markdown-fancy_lists
+pandocarc = --top-level-division=chapter --toc --toc-depth=6 -N -V linkcolorblue -V citecolor=blue -V urlcolor=blue -V toccolor=blue --filter=$(filterPATH)/pandoc-amsthm.py -f markdown-fancy_lists
 
 LIST = $(wildcard css-list/*.txt)
 CSS = $(patsubst css-list/%.txt, css/%.css, $(LIST))
