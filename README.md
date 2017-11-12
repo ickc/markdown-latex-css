@@ -1,3 +1,5 @@
+[![](https://data.jsdelivr.com/v1/package/gh/ickc/markdown-latex-css/badge)](https://www.jsdelivr.com/package/gh/ickc/markdown-latex-css)
+
 Using CSS to make the Markdown to HTML output mimics the Markdown to LaTeX output.
 
 See demo in <https://ickc.github.io/markdown-latex-css/>.
