@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Latin Modern Roman', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, STFangSong, "华文仿宋", FangSong, "仿宋", serif;
+}
+
+pre, code{
+    font-family: 'Latin Modern Mono', Consolas, "Liberation Mono", Menlo, Courier, "PingFang HK", "蘋方-港", "PingFang TC", "蘋方-繁", "PingFang SC", "蘋方-簡", "PingFang", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", monospace;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    line-height: 135%;
+    text-align: justify;
+}
+del {
+    background: #fae6e6;
+}
+ins {
+    background: #ecfce6
+}
+a.footnote,
+a.citation {
+    font-size: 0.83em;
+    vertical-align: super;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ol ol ol ol{
+    list-style-type: upper-alpha;
+}
+
+ol ol ol ol ol{
+    list-style-type: upper-roman;
+}
+
+ol ol ol ol ol ol{
+    list-style-type: lower-greek;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ul ul ul {
+    list-style-type: square;
+}
+
+ul ul ul ul {
+    list-style-type: disc;
+}
+
+ul ul ul ul ul {
+    list-style-type: circle;
+}
+
+ul ul ul ul ul ul {
+    list-style-type: square;
+}
+
+th {
+    padding: 1px;
+}
+td {
+    padding: 5px;
+}
+
+/* From MultiMarkdown Composer 3 */
+table {
+    border: solid black;
+    border-width: 2px 0px;
+    empty-cells: hide;
+    border-spacing: 0px;
+    padding: 2px;
+    margin: 20px auto;
+}
+table caption {
+    margin: 5px;
+    text-align: center;
+    caption-side: bottom;
+}
+thead th {
+    border: solid gray;
+    border-width: 0 0 2px 0;
+    padding: 5px;
+}
+thead > tr:last-child > th {
+    border-style: none;
+}
+tbody > tr:first-child > td {
+    border: solid gray;
+    border-width: 1px 0 0 0;
+}
+tbody > tr:first-child > th {
+    border: solid gray;
+    border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > td {
+    border: solid black;
+    border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > th {
+    border: solid black;
+    border-width: 1px 0 0 0;
+}
+
+img {
+    max-width: 100%;
+    zoom: 50%;
+}
+
+div.toolbar {
+  line-height: 100%;
+}
+
