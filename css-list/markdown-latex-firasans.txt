@@ -6,3 +6,4 @@ img
 toc
 heading
 amsthm
+slidy

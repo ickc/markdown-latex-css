@@ -3,3 +3,4 @@ mmdc-print
 list
 table
 img
+slidy
