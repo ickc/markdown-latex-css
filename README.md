@@ -17,6 +17,7 @@ The followings are put in [`css/`](css/):
 5. `system-fonts`: a tiny font css setting the main font as "Gill Sans" and code font as "Consolas", with multiple fallback including Chinese fonts.
 	1. `system-fonts-lmodern`: Expect "Latin Modern Roman" and "Latin Modern Mono" exists in system fonts. Otherwise, see [Fonts (Latin Modern)].
 6. `mmdc`: make it looks closer to MultiMarkdown Composer 3's output CSS with minor modification.
+7. `slidy`: fix a clash between slidy's toolbar and `_mmdc.css`. Slidy should be loaded before this.
 
 The most common combinations of CSSes are combined and provided in the `css/` in the [GitHub Releases](https://github.com/ickc/markdown-latex-css/releases/latest). They can be retrieved through the jsdelivr like this: <https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/css/pandoc-latex-lmodern.min.css>, <https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/fonts/fonts.min.css>. Read more from [Features - jsDelivr](https://www.jsdelivr.com/features) and get them from [ickc/markdown-latex-css CDN by jsDelivr - A free, fast, and reliable Open Source CDN](https://www.jsdelivr.com/package/gh/ickc/markdown-latex-css).
 
